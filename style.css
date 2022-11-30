@@ -1,0 +1,124 @@
+body {
+  background-image: url("images/star-wars-backgrounds--starfield.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.background-design {
+  background-image: url("images/star-wars-backgrounds--starfield.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: white;
+}
+
+.bg-image {
+  background-image: url("../images/star-wars-backgrounds--starfield.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-color: #272727; */
+  /* background-blend-mode: overlay; */
+  z-index: -1;
+}
+
+.trilogy-center img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.py-sizing {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+.row .g-2 img {
+  float: left;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.row .g-2 img:hover {
+  filter: brightness(70%);
+}
+
+@media (min-width: 992px) {
+  /* .bg-image {
+    display: none;
+  } */
+
+  #myVideo {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #myVideo {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    height: 200%;
+    width: 200%;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: -1;
+  }
+
+  .content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .centering {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .smaller-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  iframe {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .trilogy-center {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .trilogy-center img {
+    width: 100%;
+  }
+}
